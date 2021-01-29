@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #33475B;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul li a {
+    color: #33475B;
+    text-decoration: none;
+}
+
+/* layout */
+
+div.container {
+    width: 58%;
+    margin: 0 auto;
+}
+
+div.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div[class^="col-"] {
+    float: left;
+}
+
+div.col-100 {
+    width: 100%;
+}
+
+div.col-60 {
+    width: 60%;
+}
+
+div.col-50 {
+    width: 50%;
+}
+
+div.col-40 {
+    width: 40%;
+}
+
+div.col-33 {
+    width: calc(100% / 3);
+}
+
+div.col-25 {
+    width: 25%;
+}
+
+/* end layout*/
+
+/* header */
+
+/* navbar */
+
+header nav {
+    position: relative;
+    height: 7vh;
+}
+
+header nav > ul.inner-group:first-child,
+header nav > ul.inner-group:last-child {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header nav > ul.inner-group:last-child {
+    right: 0;
+}
+
+header nav > ul.inner-group > li {
+    position: relative;
+    padding: 0 8px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+header nav > ul.inner-group > li:first-child {
+    padding-left: 0;
+}
+
+header nav > ul.inner-group > li.menu-dropdown {
+    padding-right: 20px;
+    margin-right: 5px;
+}
+
+header nav > ul.inner-group > li.r-border:before {
+    content: "";
+    border-left: 1px solid #B9C1C5;
+    border-right: 1px solid #8B9599;
+}
+
+header nav div#logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header nav div#logo > img {
+    width: 90%;
+}
+
+/* end navbar */
+
+/* header banner */
+
+header section.header-banner {
+    position: relative;
+    background: #FFF4EF;
+}
+
+header section.header-banner:after {
+    content: "";
+    position: absolute;
+    top: 4%;
+    right: 6%;
+    background: url("../img/clouds.svg");
+    width: 38%;
+    height: 100%;
+}
+
+header section.header-banner img.banner {
+    position: absolute;
+    bottom: 0;
+    right: 6%;
+    width: 69%;
+    z-index: 1;
+}
+
+header section.header-banner div.banner-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 11.6%;
+    background: #AFEBE4;
+    border-top: 3px solid #33475B;
+    z-index: 2;
+}
+
+header section.header-banner div.banner-bottom:after {
+    content: "";
+    position: absolute;
+    bottom: 83px;
+    right: 0;
+    width: 7%;
+    height: 83.7%;
+    background: #00A48D;
+    border-top: 3px solid #33475B;
+    border-bottom: 3px solid #33475B;
+}
+
+header div.title {
+    width: 75%;
+    padding: 60px 0 350px;
+}
+
+header div.title > h1 {
+    font-size: 3em;
+    margin-bottom: 22px;
+}
+
+header div.title > p {
+    line-height: 20px;
+    margin-bottom: 22px;
+}
+
+/* end header */
+
+/* icons */
+
+i.fa-globe-europe {
+    margin-right: 5px;
+}
+
+i.fa-search {
+    color: #04A5BE;
+}
+
+i.fa-angle-down {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 15px;
+}
+
+/* end icons */
+
+/* buttons */
+
+button {
+    color: #FE775A;
+    background: none;
+    padding: 8px;
+    border: 1px solid #FE775A;
+    border-radius: 3px;
+}
+
+button.highlighted {
+    color: #FFF!important;
+    background: #FE775A!important;
+    border: 1px solid #FB9C88!important;
+}
+
+/* utility */
+
+/* sections */
+
+section.bg-lblue {
+    background: #F4F9FD;
+}
+
+section.b-bottom {
+    border-bottom: 1px solid #33475B;
+}
+
+section.b-shadow {
+    box-shadow: 1px 0 1px #333;
+}
+
+section.bg-beige {
+    background: #FFF4EF;
+}
+
+/* end sections */
+
+/* buttons */
+
+button.large {
+    padding: 15px 20px;
+}
+
+/* end buttons */
+
+/* p */
+
+p.small {
+    font-size: .8rem;
+}
+
+/* end p */
+
+/* margin and padding */
+
+.m-t20 {
+    margin-top: 20px;
+}
+
+/* end margin and padding */
+
+/* end utility*/

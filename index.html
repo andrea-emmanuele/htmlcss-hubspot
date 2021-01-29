@@ -3,41 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>Hubspot - Just a clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/master.css">
 </head>
 <body>
     <header>
-        <section class="bg-lblue">
+        <section class="bg-lblue b-bottom b-shadow">
             <div class="container">
+                <!--navbar-->
                 <nav>
-                    <!--first navigation menu-->
-                    <div class="nav-inner">
-                        <ul class="inner-group"></ul>
-                        <ul class="inner-group"></ul>
-                    </div>
+                    <!--left nav content-->
+                    <ul class="inner-group">
+                        <li class="menu-dropdown">
+                            <i class="fas fa-globe-europe"></i>
+                            English
+                            <i class="fas fa-angle-down"></i>
+                        </li>
+                        <li class="r-border"></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <!--right nav content-->
+                    <ul class="inner-group">
+                        <li><i class="fas fa-search"></i></li>
+                        <li>
+                            <button>Log in</button>
+                        </li>
+                        <li>
+                            <button class="highlighted">GetHubspotFree</button>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </section>
         <section>
             <div class="container">
+                <!--second nav bar fixed on top-->
                 <nav>
-                    <!--second navigation menu fixed on top-->
-                    <div class="nav-inner">
-                        <div id="logo"></div>
-                        <ul class="inner-group"></ul>
-                        <button class="highlighted"></button>
+                    <div id="logo">
+                        <img src="./assets/img/logo.svg" alt="hubspot logo">
                     </div>
+                    <ul class="inner-group">
+                        <li class="menu-dropdown">Software
+                            <i class="fas fa-angle-down"></i>
+                        </li>
+                        <li><a href="#">Pricing</a></li>
+                        <li class="menu-dropdown">Resources
+                            <i class="fas fa-angle-down"></i>
+                        </li>
+                        <li class="menu-dropdown">Partners
+                            <i class="fas fa-angle-down"></i>
+                        </li>
+                        <li class="menu-dropdown">About
+                            <i class="fas fa-angle-down"></i>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </section>
-        <section class="bg-header-image">
+        <section class="header-banner">
+            <!--banner-->
+            <img class="banner" src="./assets/img/jumbotron.svg" alt="illustration">
             <div class="container">
                 <!--header section title-->
                 <div class="row">
-                    <div class="col-50"></div>
+                    <div class="col-50">
+                        <div class="title">
+                            <h1>There's a better way to grow.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam at delectus dolorem dolores fuga molestiae, nam natus necessitatibus odio odit perspiciatis, possimus praesentium quas quo sint tempore velit.</p>
+                            <button class="highlighted large">GetHubspotFree</button>
+                            <p class="small m-t20">Get started with FREE tools, and upgrade as you grow.</p>
+                        </div>
+                    </div>
                 </div>
-                <!--background bottom-->
-                <div class="bg-bottom"></div>
+                <!--banner bottom-->
+                <div class="banner-bottom"></div>
             </div>
         </section>
     </header>

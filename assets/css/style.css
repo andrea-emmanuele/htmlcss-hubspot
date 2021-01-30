@@ -14,11 +14,21 @@ ul li a {
     text-decoration: none;
 }
 
+/*header div.title >*/ p {
+    line-height: 28px;
+    margin-bottom: 26px;
+}
+
 /* layout */
 
 div.container {
     width: 58%;
     margin: 0 auto;
+}
+
+div.row {
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 div.row:after {
@@ -29,6 +39,7 @@ div.row:after {
 
 div[class^="col-"] {
     float: left;
+    padding: 0 20px;
 }
 
 div.col-100 {
@@ -105,7 +116,7 @@ header nav div#logo {
     transform: translateY(-50%);
 }
 
-header nav div#logo > img {
+header nav div#logo > a > img {
     width: 90%;
 }
 
@@ -113,30 +124,31 @@ header nav div#logo > img {
 
 /* header banner */
 
-header section.header-banner {
+header section#header-banner {
     position: relative;
+    top: 67px;
     background: #FFF4EF;
 }
 
-header section.header-banner:after {
+header section#header-banner:after {
     content: "";
     position: absolute;
-    top: 4%;
+    top: 3.2%;
     right: 6%;
     background: url("../img/clouds.svg");
     width: 38%;
     height: 100%;
 }
 
-header section.header-banner img.banner {
+header section#header-banner > img {
     position: absolute;
-    bottom: 0;
-    right: 6%;
+    bottom: -1px;
+    right: 6.3%;
     width: 69%;
     z-index: 1;
 }
 
-header section.header-banner div.banner-bottom {
+header section#header-banner div.banner-bottom {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -144,37 +156,109 @@ header section.header-banner div.banner-bottom {
     height: 11.6%;
     background: #AFEBE4;
     border-top: 3px solid #33475B;
+    border-bottom: 3px solid #33475B;
     z-index: 2;
 }
 
-header section.header-banner div.banner-bottom:after {
+header section#header-banner div.banner-bottom:after {
     content: "";
     position: absolute;
-    bottom: 83px;
+    bottom: 78px;
     right: 0;
     width: 7%;
-    height: 83.7%;
+    height: 87.7%;
     background: #00A48D;
     border-top: 3px solid #33475B;
     border-bottom: 3px solid #33475B;
 }
 
 header div.title {
-    width: 75%;
-    padding: 60px 0 350px;
+    padding: 64px 0 280px;
 }
 
 header div.title > h1 {
-    font-size: 3em;
-    margin-bottom: 22px;
-}
-
-header div.title > p {
-    line-height: 20px;
+    font-size: 4em;
     margin-bottom: 22px;
 }
 
 /* end header */
+
+/* main */
+
+main {
+    position: relative;
+    top: 67px;
+    left: 0;
+    height: 20vh;
+}
+
+main div.title {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0 30px;
+}
+
+main div.title > img {
+    width: 30%;
+}
+
+main div.title > h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+main div.card {
+    background: #FFF;
+    box-shadow: 0 0 4px #cecfd4;
+    padding: 60px 100px;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+
+main div.card div.card-sx {
+    position: relative;
+    top: -25px;
+    display: inline-block;
+}
+
+main div.card div.card-sx > img {
+    width: 125px;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+main div.card div.card-dx {
+    width: 80%;
+    padding: 0 87px;
+    display: inline-block;
+}
+
+main div.card div.card-dx > h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+main div.card div.card-dx > h5 {
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+main div.card div.card-dx > hr {
+    position: relative;
+    bottom: 2.5px;
+    left: 40px;
+    width: 78%;
+    border-top: 1px solid #FE775A;
+    display: inline-block;
+}
+
+main div.card div.card-dx > ul > li {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* end main*/
 
 /* icons */
 
@@ -193,6 +277,10 @@ i.fa-angle-down {
     font-size: 15px;
 }
 
+i.fa-check-circle {
+    color: #FE775A;
+}
+
 /* end icons */
 
 /* buttons */
@@ -203,6 +291,11 @@ button {
     padding: 8px;
     border: 1px solid #FE775A;
     border-radius: 3px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
 }
 
 button.highlighted {
@@ -214,6 +307,21 @@ button.highlighted {
 /* utility */
 
 /* sections */
+
+section.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+section.rel {
+    position: relative;
+    top: 7vh;
+}
+
+section.bg-white {
+    background: #FFF;
+}
 
 section.bg-lblue {
     background: #F4F9FD;
@@ -236,7 +344,7 @@ section.bg-beige {
 /* buttons */
 
 button.large {
-    padding: 15px 20px;
+    padding: 18px 37px;
 }
 
 /* end buttons */
@@ -244,17 +352,33 @@ button.large {
 /* p */
 
 p.small {
-    font-size: .8rem;
+    font-size: .88rem;
 }
 
 /* end p */
 
 /* margin and padding */
 
-.m-t20 {
-    margin-top: 20px;
+.m-t24 {
+    margin-top: 24px;
+}
+
+.m-t10 {
+    margin-top: 10px;
+}
+
+.p-lr15 {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* end margin and padding */
+
+/* z-index */
+
+.zx-2 {
+   position: relative;
+   z-index: 2;
+}
 
 /* end utility*/

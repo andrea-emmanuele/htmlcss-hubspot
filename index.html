@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hubspot - Just a clone</title>
+    <title>HubSpot - Just a clone</title>
+    <link rel="shortcut icon" href="./assets/img/HubSpot-Inversed-Favicon.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./assets/css/master.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header>
-        <section class="bg-lblue b-bottom b-shadow">
+        <section class="fixed bg-lblue b-bottom b-shadow">
             <div class="container">
                 <!--navbar-->
                 <nav>
@@ -35,12 +36,12 @@
                 </nav>
             </div>
         </section>
-        <section>
+        <section class="rel bg-white">
             <div class="container">
                 <!--second nav bar fixed on top-->
                 <nav>
                     <div id="logo">
-                        <img src="./assets/img/logo.svg" alt="hubspot logo">
+                        <a href=""><img src="./assets/img/logo.svg" alt="hubspot logo"></a>
                     </div>
                     <ul class="inner-group">
                         <li class="menu-dropdown">Software
@@ -60,9 +61,9 @@
                 </nav>
             </div>
         </section>
-        <section class="header-banner">
+        <section id="header-banner">
             <!--banner-->
-            <img class="banner" src="./assets/img/jumbotron.svg" alt="illustration">
+            <img src="./assets/img/jumbotron.svg" alt="illustration">
             <div class="container">
                 <!--header section title-->
                 <div class="row">
@@ -70,8 +71,8 @@
                         <div class="title">
                             <h1>There's a better way to grow.</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam at delectus dolorem dolores fuga molestiae, nam natus necessitatibus odio odit perspiciatis, possimus praesentium quas quo sint tempore velit.</p>
-                            <button class="highlighted large">GetHubspotFree</button>
-                            <p class="small m-t20">Get started with FREE tools, and upgrade as you grow.</p>
+                            <button class="highlighted large zx-2">GetHubspotFree</button>
+                            <p class="small m-t24">Get started with FREE tools, and upgrade as you grow.</p>
                         </div>
                     </div>
                 </div>
@@ -81,20 +82,42 @@
         </section>
     </header>
     <main>
-        <section class="bg-lblue">
+        <section id="services" class="bg-lblue">
             <div class="container">
                 <!--section title-->
                 <div class="row">
-                    <div class="col-100"></div>
-                <!--</div>-->
+                    <div class="col-100">
+                        <div class="title">
+                            <img src="./assets/img/cube.webp" alt="cube">
+                            <h3>Powerful Alone. Better Together.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at dicta ex, fuga magnam magni praesentium quam veritatis? Doloremque quaerat quam sapiente. Blanditiis ducimus excepturi ipsum modi omnis veritatis vero?</p>
+                        </div>
+                    </div>
                 <!--cards-->
+                    <div class="col-100">
+                        <div class="card">
+                            <div class="card-sx">
+                                <img src="./assets/img/book.svg" alt="book">
+                                <button class="highlighted large">Learn More</button>
+                            </div>
+                            <div class="card-dx">
+                                <h4>Free HubSpot CRM</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cupiditate delectus doloremque eaque error facere facilis.</p>
+                                <h5>Popular Feature</h5>
+                                <hr>
+                                <ul class="m-t10">
+                                    <li><i class="fas fa-check-circle"></i><span class="p-lr15">Contact Insight</span></li>
+                                    <li><i class="fas fa-check-circle"></i><span class="p-lr15">Deals</span></li>
+                                    <li><i class="fas fa-check-circle"></i><span class="p-lr15">Task</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 <!--<div class="row">-->
-                    <div class="col-100"></div>
+                    <div class="col-33"><div class="card">a</div></div>
+                    <div class="col-33"><div class="card">a</div></div>
+                    <div class="col-33"><div class="card">a</div></div>
                 <!--</div>-->
-                <!--<div class="row">-->
-                    <div class="col-33"></div>
-                    <div class="col-33"></div>
-                    <div class="col-33"></div>
                 </div>
             </div>
         </section>

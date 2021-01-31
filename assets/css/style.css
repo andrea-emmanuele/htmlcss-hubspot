@@ -4,9 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #33475B;
     font-size: 13px;
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: #33475B;
 }
 
 ul li a {
@@ -64,6 +67,7 @@ div.col-33 {
 
 div.col-25 {
     width: 25%;
+    padding: 0;
 }
 
 /* end layout*/
@@ -191,8 +195,6 @@ main {
 }
 
 main div.title {
-    width: 70%;
-    margin: 0 auto;
     text-align: center;
     padding: 60px 0 30px;
 }
@@ -296,6 +298,50 @@ main div.card.vertical > ul > li {
 
 /* end card */
 
+/* community grid */
+
+main div.grid {
+    margin-bottom: 70px;
+}
+
+main div.cell {
+    text-align: center;
+    padding: 20px 40px 0;
+}
+
+main div.cell.b-r {
+    border-right: 1px solid #FFF;
+}
+
+main div.cell.b-b {
+    border-bottom: 1px solid #FFF;
+}
+
+main div.cell > img {
+    height: 23px;
+    margin: 0 auto;
+    display: block;
+}
+
+main div.cell > span {
+    position: relative;
+    right: 7px;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+main div.cell > span:after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "+";
+    font-size: .6em;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
 /* end main*/
 
 /* icons */
@@ -365,6 +411,10 @@ section.bg-lblue {
     background: #F4F9FD;
 }
 
+section.bg-lgr {
+    background-image: linear-gradient(45deg,#00a4bd,#00bda5);
+}
+
 section.b-bottom {
     border-bottom: 1px solid #33475B;
 }
@@ -385,16 +435,44 @@ section.bg-beige {
     z-index: 2;
 }
 
-/* buttons */
+/* width */
 
-button.large {
-    padding: 18px 37px;
+.w-90 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.w-70 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* img width */
+
+img.w-125 {
+    width: 125px!important;
+}
+
+img.w-91 {
+    width: 91px!important;
+}
+
+/* text color */
+
+.white {
+    color: #FFF;
 }
 
 /* p */
 
 p.small {
     font-size: .88rem;
+}
+
+/* buttons */
+
+button.large {
+    padding: 18px 37px;
 }
 
 /* margin and padding */
@@ -412,14 +490,5 @@ p.small {
     padding-right: 15px;
 }
 
-/* img width */
-
-img.w-125 {
-    width: 125px!important;
-}
-
-img.w-91 {
-    width: 91px!important;
-}
 
 /* end utility*/

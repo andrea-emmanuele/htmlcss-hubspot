@@ -120,8 +120,6 @@ header nav div#logo > a > img {
     width: 90%;
 }
 
-/* end navbar */
-
 /* header banner */
 
 header section#header-banner {
@@ -208,6 +206,8 @@ main div.title > h3 {
     margin-bottom: 20px;
 }
 
+/* card */
+
 main div.card {
     background: #FFF;
     box-shadow: 0 0 4px #cecfd4;
@@ -215,6 +215,28 @@ main div.card {
     border-radius: 4px;
     margin-bottom: 50px;
 }
+
+main div.card h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+main div.card h5 {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+main div.card hr {
+    position: relative;
+    bottom: 2.5px;
+    left: 40px;
+    width: 76%;
+    border-top: 1px solid #899397;
+    display: inline-block;
+}
+
+/* horizontal card */
 
 main div.card div.card-sx {
     position: relative;
@@ -234,29 +256,45 @@ main div.card div.card-dx {
     display: inline-block;
 }
 
-main div.card div.card-dx > h4 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-main div.card div.card-dx > h5 {
-    text-transform: uppercase;
-    display: inline-block;
-}
-
-main div.card div.card-dx > hr {
-    position: relative;
-    bottom: 2.5px;
-    left: 40px;
-    width: 78%;
-    border-top: 1px solid #FE775A;
-    display: inline-block;
-}
 
 main div.card div.card-dx > ul > li {
     margin-top: 10px;
     display: inline-block;
 }
+
+/* vertical card */
+
+main div.card.vertical {
+    text-align: center;
+    padding: 20px 50px;
+}
+
+main div.card.vertical > img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+main div.card.vertical > hr {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+main div.card.vertical > h5 {
+    margin-bottom: 20px;
+}
+
+main div.card.vertical > ul {
+    margin-bottom: 40px;
+}
+
+main div.card.vertical > ul > li {
+    list-style: none;
+    text-align: left;
+}
+
+/* end card */
 
 /* end main*/
 
@@ -339,7 +377,13 @@ section.bg-beige {
     background: #FFF4EF;
 }
 
-/* end sections */
+
+/* z-index */
+
+.zx-2 {
+    position: relative;
+    z-index: 2;
+}
 
 /* buttons */
 
@@ -347,15 +391,11 @@ button.large {
     padding: 18px 37px;
 }
 
-/* end buttons */
-
 /* p */
 
 p.small {
     font-size: .88rem;
 }
-
-/* end p */
 
 /* margin and padding */
 
@@ -372,13 +412,14 @@ p.small {
     padding-right: 15px;
 }
 
-/* end margin and padding */
+/* img width */
 
-/* z-index */
+img.w-125 {
+    width: 125px!important;
+}
 
-.zx-2 {
-   position: relative;
-   z-index: 2;
+img.w-91 {
+    width: 91px!important;
 }
 
 /* end utility*/

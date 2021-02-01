@@ -113,8 +113,45 @@ header nav > ul.inner-group > li:first-child {
 }
 
 header nav > ul.inner-group > li.menu-dropdown {
+    position: relative;
     padding-right: 20px;
     margin-right: 5px;
+}
+
+header nav > ul.inner-group > li.menu-dropdown > ul {
+    position: absolute;
+    top: 35px;
+    right: -22%;
+    background: #FFF;
+    list-style: none;
+    padding: 10px 20px 10px 27px;
+    border: 1px solid #C9D6E2;
+    border-radius: 3px;
+    visibility: hidden;
+}
+
+header nav > ul.inner-group > li.menu-dropdown:hover > ul {
+    visibility: visible;
+}
+
+header nav > ul.inner-group > li.menu-dropdown > ul:before {
+    position: absolute;
+    top: -8.6px;
+    right: 15px;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #FFF;
+    border-left:1px solid #cecfd4;
+    border-top:1px solid #cecfd4;
+    border-radius: 2px;
+    transform: rotate(45deg);
+
+}
+
+header nav > ul.inner-group > li.menu-dropdown > ul > li {
+    padding: 10px 20px 10px 0;
+    margin: 0 auto;
 }
 
 header nav > ul.inner-group > li.r-border:before {

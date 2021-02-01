@@ -17,7 +17,12 @@ ul li a {
     text-decoration: none;
 }
 
-/*header div.title >*/ p {
+ul li a:hover {
+    color: #007a8c;
+    text-decoration: underline;
+}
+
+p {
     line-height: 28px;
     margin-bottom: 26px;
 }
@@ -97,6 +102,10 @@ header nav > ul.inner-group > li {
     padding: 0 8px;
     display: inline-block;
     cursor: pointer;
+}
+
+header nav > ul.inner-group > li.p-r0 {
+    padding-right: 0;
 }
 
 header nav > ul.inner-group > li:first-child {
@@ -191,7 +200,6 @@ main {
     position: relative;
     top: 67px;
     left: 0;
-    height: 20vh;
 }
 
 main div.title {
@@ -374,8 +382,9 @@ main section#customers div.cell {
 }
 
 main section#customers div.cell > img {
-    height: 100%;
     width: 100%;
+    height: 38px;
+    object-fit: scale-down;
 }
 
 main section#customers div.content > img.content-image {
@@ -389,7 +398,74 @@ main section#customers div.content > img.content-image {
 
 /* footer */
 
+footer {
+    position: relative;
+    top: 7vh;
+}
 
+footer h4 {
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #FFF!important;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+footer a:hover {
+    color: #7fd1de!important;
+    text-decoration: underline;
+}
+
+footer button.highlighted {
+    background: #FFF!important;
+    color: #33475B!important;
+    border: none!important;
+}
+
+footer button.highlighted:hover {
+    background: rgba(255, 255, 255, 0.7)!important;
+    border: none!important;
+}
+
+footer ul {
+    margin-top: 5px;
+}
+
+footer ul > li {
+    margin: 5px 10px;
+    display: inline-block;
+}
+
+footer ul > li:first-child {
+    margin: 5px 10px 5px 0;
+}
+
+footer div.logo-small {
+    position: relative;
+    width: 72%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+footer div.logo-small:after {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    content: "Copyright \00a9  2019 HubSpot, Inc.";
+}
+
+footer div.logo-small > img {
+    width: 80px;
+}
+
+footer div.disclaimer {
+    position: absolute;
+    top: 22px;
+    right: 12px;
+}
 
 /* end footer */
 
@@ -427,6 +503,11 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #ecd9d7;
+    transition: .3s ease-in-out;
+}
+
 button:focus {
     outline: none;
 }
@@ -435,6 +516,12 @@ button.highlighted {
     color: #FFF!important;
     background: #FE775A!important;
     border: 1px solid #FB9C88!important;
+}
+
+button.highlighted:hover {
+    background-color: #ffbcac!important;
+    border: 1px solid #ffbcac!important;
+    transition: .3s ease-in-out;
 }
 
 /* utility */
@@ -460,6 +547,14 @@ section.bg-lblue {
     background: #F4F9FD;
 }
 
+section.bg-beige {
+    background: #FFF4EF;
+}
+
+section.bg-grey {
+    background: #33475B;
+}
+
 section.bg-lgr {
     background-image: linear-gradient(45deg,#00a4bd,#00bda5);
 }
@@ -472,10 +567,11 @@ section.b-shadow {
     box-shadow: 1px 0 1px #333;
 }
 
-section.bg-beige {
-    background: #FFF4EF;
-}
+/* position */
 
+.rel {
+    position: relative;
+}
 
 /* z-index */
 
@@ -506,10 +602,14 @@ img.w-91 {
     width: 91px!important;
 }
 
-/* text color */
+/* text */
 
 .white {
     color: #FFF;
+}
+
+.center {
+    text-align: center;
 }
 
 /* p */
@@ -526,6 +626,21 @@ button.large {
 
 /* margin and padding */
 
+.p-tb30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.p-lr15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.p-lr20 {
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+}
+
 .m-t80 {
     margin-top: 80px;
 }
@@ -538,13 +653,4 @@ button.large {
     margin-top: 10px;
 }
 
-.p-lr15 {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.p-lr20 {
-    padding-left: 20px;
-    padding-right: 20px;
-}
 /* end utility*/
